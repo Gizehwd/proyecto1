@@ -11,9 +11,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('plantilla');
-});
-Route::get('/bienvenida', function () {
     return view('bienvenida');
 });
+
+
+
+
+//Ejemplo de ruta
+Route::get('/ejemplo/ejeplo','EjemploController@ejemplo')->name('ejemplo.ejemplo');
+
+
+//Pro
+Route::get('/products/create','ProductController@create')->name('products.create');
