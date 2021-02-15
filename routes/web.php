@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('plantilla');
 });
-Route::get('/romero','UserController@index')->name('usuario');
+Route::get('/bienvenida', function () {
+    return view('bienvenida');
+});
